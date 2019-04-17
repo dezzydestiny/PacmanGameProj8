@@ -22,30 +22,41 @@ public class Game
     public void handleKeyPress()
     {
         int key = grid.checkLastKeyPressed();
-        if(userRow > 0 && userRow<=10 && key == 38) //up
+        int tempKey = key;
+        if(grid.isValid(new Location(userRow-1,userCol)) && key == 38) //up
         {
             grid.setImage(new Location(userRow, userCol), null);
             userRow--;
             grid.setImage(new Location(userRow, userCol), "pacUp.PNG");
+        }else{
+
         }
-        else if(userRow < 10 &&userRow>=0 && key == 40)  //down
+        if(grid.isValid(new Location(userRow+1,userCol)) && key == 40)  //down
         {
             grid.setImage(new Location(userRow, userCol), null);
             userRow++;
             grid.setImage(new Location(userRow, userCol), "pacDown.PNG");
+        }else{
+
         }
-        else if(userCol>0 && userCol <= 10 && key == 37)  //left
+        if(grid.isValid(new Location(userRow,userCol-1)) && key == 37)  //left
         {
             grid.setImage(new Location(userRow, userCol), null);
             userCol--;
             grid.setImage(new Location(userRow, userCol), "pacLeft.PNG");
+        }else{
+
         }
-        else if(userCol < 10 && userCol>=0 && key == 39)  //right
+        if(grid.isValid(new Location(userRow,userCol+1)) && key == 39)  //right
         {
             grid.setImage(new Location(userRow, userCol), null);
             userCol++;
             grid.setImage(new Location(userRow, userCol), "pacRight.PNG");
+        }else{
+
         }
+        //makes it so it doesn't pause when you change to an invalid direction
+
     }
 
     public void play()
