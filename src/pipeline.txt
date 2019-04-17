@@ -1,0 +1,9 @@
+import images
+size of game (rectangular )
+moving character (pacman) (seperate into classes w/ ghost)
+insert maps, layout of game
+handling map collision
+eating points
+auto-moving ghosts (basic tho)
+death on touching ghost
+sounds
