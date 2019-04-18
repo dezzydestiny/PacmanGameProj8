@@ -1,7 +1,9 @@
 import java.util.ArrayList;
 
-public class BigDot {
-    private ArrayList<Location> bigDot;
-
+public class BigDot extends Dot{
+    public BigDot(){
+        dotLocation = new ArrayList<Location>();
+        imageFileName = "get.gif";
+    }
 }
 

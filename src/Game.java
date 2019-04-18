@@ -95,7 +95,7 @@ public class Game {
     }
 
     public void updateTitle() {
-        grid.setTitle("Game:  " + getScore());
+        grid.setTitle("Pacman: " + getScore());
     }
 
     public boolean isGameOver() {
