@@ -1,8 +1,11 @@
-import images
-size of game (rectangular )
-moving character (pacman) (seperate into classes w/ ghost)
-insert maps, layout of game
-handling map collision
+import images - done
+size of game (square) - done
+moving character (pacman) (seperate into classes w/ ghost) - done
+insert maps, layout of game (maps will be implemented through reading a special image) - done
+    black zones will be walls (255,255,255)
+    pink zone (255,0,255)
+layout of maps will probably be an arraylist of locations indicating solid walls - done
+handling map collision - done
 eating points
 auto-moving ghosts (basic tho)
 death on touching ghost
