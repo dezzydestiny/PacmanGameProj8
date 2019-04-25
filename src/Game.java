@@ -80,12 +80,6 @@ public class Game {
         return grid.isValid(loc) && map.isValid(loc);
     }
 
-    public void populateRightEdge() {
-    }
-
-    public void scrollLeft() {
-    }
-
     public void handleCollision(Location loc) {
 
     }
